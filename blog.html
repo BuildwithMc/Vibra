@@ -221,7 +221,7 @@
       <section class="container mt-4 mb-lg-5 pt-lg-2 pb-5">
         <!-- Page title + Layout switcher + Search form -->
         <div class="row align-items-end gy-3 mb-4 pb-lg-3 pb-1">
-          <div class="col-lg-5 col-md-4">
+          <div class="col-lg-5 col-md-4" id="blog">
             <h1 class="mb-2 mb-md-0">Blog List</h1>
           </div>
         </div>
@@ -497,67 +497,106 @@
 
       </section>
 
-      <!-- Download app CTA -->
-      <section class="dark-mode bg-dark position-relative pt-lg-4 pt-xl-5 overflow-hidden">
-        <div class="position-absolute top-0 start-0 w-100 h-100 bg-secondary"></div>
-        <div class="container position-relative zindex-3 pt-5">
-          <div class="row pt-2 pt-sm-3 pt-md-4">
-            <div class="col-md-6 col-xl-5 col-xxl-4 text-center text-md-start pb-4 pb-sm-5 mb-2 mb-md-3 mb-lg-4 mb-xl-5">
-              <h2 class="h1 mb-5">Download Our App for Any Devices:</h2>
-              <div class="d-flex d-md-block mt-n2 mt-sm-0">
-                <div class="row row-cols-1 row-cols-lg-2 align-items-lg-end me-1 me-md-0 pb-md-4 mb-md-3">
-                  <div class="col">
-                    <h3 class="fs-base fw-normal opacity-60 mb-2">App Store</h3>
-                    <div class="text-nowrap text-warning pb-1 mb-2">
-                      <i class="bx bxs-star"></i>
-                      <i class="bx bxs-star"></i>
-                      <i class="bx bxs-star"></i>
-                      <i class="bx bxs-star"></i>
-                      <i class="bx bxs-star"></i>
+      <!-- FAQ (Accordion) -->
+      <section class="container">
+        <div class="bg-secondary rounded-3 py-5 px-3 px-sm-4 px-md-0">
+          <h2 class="text-center pt-md-1 pt-lg-3 pt-xl-4 pb-4 mt-xl-1 mb-2">Frequently Asked Questions</h2>
+          <div class="row justify-content-center pb-lg-4 pb-xl-5">
+            <div class="col-xl-8 col-lg-9 col-md-10 pb-md-2">
+              <div class="accordion" id="faq">
+                <!-- Item -->
+                <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button shadow-none rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#q-1" aria-expanded="true" aria-controls="q-1">
+                      Who is VIBRA ?
+                    </button>
+                  </h3>
+                  <div class="accordion-collapse collapse show" id="q-1" data-bs-parent="#faq">
+                    <div class="accordion-body fs-sm pt-0">
+                      <p>
+                        VIBRA is a simple, all-in-one crypto investment app for Africans, it’s a user-friendly platform for both newbies and crypto enthusiasts. 
+                        This crypto investment app has a wide variety of functions like OTC buy & sell, trading, as well as a community that empowers Africans to control their future wealth.
+                        VIBRA offers an easy way for beginners to learn, and make trades with a community of experts, which enables Africans to effortlessly go from zero to crypto master.
+                      </p>
                     </div>
-                    <h4 class="mb-1">Editor's Choice</h4>
-                    <p class="mb-0">rating 4.9, 64 reviews</p>
-                  </div>
-                  <div class="col d-xl-flex justify-content-end">
-                    <a href="https://apps.apple.com/ng/app/vibra-africa/id1583907652" class="btn btn-dark btn-lg w-xl-100 px-3 py-2 ms-xl-3 mt-3 mt-lg-0">
-                      <img src="assets/img/market/appstore-light.svg" class="light-mode-img" width="124" alt="App Store" />
-                      <img src="assets/img/market/appstore-dark.svg" class="dark-mode-img" width="124" alt="App Store" />
-                    </a>
                   </div>
                 </div>
-                <div class="row row-cols-1 row-cols-lg-2 align-items-lg-end">
-                  <div class="col">
-                    <h3 class="fs-base fw-normal opacity-60 mb-2">Google Play</h3>
-                    <div class="text-nowrap text-warning pb-1 mb-2">
-                      <i class="bx bxs-star"></i>
-                      <i class="bx bxs-star"></i>
-                      <i class="bx bxs-star"></i>
-                      <i class="bx bxs-star"></i>
-                      <i class="bx bxs-star"></i>
+
+                <!-- Item -->
+                <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q-2" aria-expanded="false" aria-controls="q-2">
+                      How to verify and upgrade VIBRA account
+                    </button>
+                  </h3>
+                  <div class="accordion-collapse collapse" id="q-2" data-bs-parent="#faq">
+                    <div class="accordion-body fs-sm pt-0">
+                      <p>
+                        There are three verification levels. Each level solves a limitation problem that unlocks the best of VIBRA. 
+                        <ul>
+                          Level I : Verify your phone number, to be able to make Crypto purchases.
+                            <li>Tap the Accounts tab from the app homepage</li>
+                            <li>Click Profile</li>
+                            <li>Tap Phone Number and enter your mobile number to proceed</li>
+                          Level II : Verify your BVN/NIN details, to enable you make Crypto/Cash withdrawals.
+                            <li>Tap the Accounts tab from the app homepage</li>
+                            <li>Click Identity Verification</li>
+                            <li>Tap Next level verification</li>
+                            <li>Enter your appropriate BVN/NIN details and click Submit</li>
+                          Level III : Verify your local bank details by adding a bank account number in your VIBRA registered name. This allows for Cash transactions and gives you access to our P2P trading platform.
+                           <li> Tap Next level verification</li>
+                           <li> Enter your bank account details</li>
+                        </ul>
                     </div>
-                    <h4 class="mb-1">App of the Day</h4>
-                    <p class="mb-0">rating 4.2, 386 reviews</p>
-                  </div>
-                  <div class="col d-xl-flex justify-content-end">
-                    <a href="https://play.google.com/store/apps/details?id=com.abl.vibra" class="btn btn-dark btn-lg w-xl-100 px-3 py-2 ms-xl-3 mt-3 mt-lg-0">
-                      <img src="assets/img/market/googleplay-light.svg" class="light-mode-img" width="139" alt="Google Play" />
-                      <img src="assets/img/market/googleplay-dark.svg" class="dark-mode-img" width="139" alt="Google Play" />
-                    </a>
                   </div>
                 </div>
+
+                <!-- Item -->
+                <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q-3" aria-expanded="false" aria-controls="q-3">
+                     Account login issues
+                    </button>
+                  </h3>
+                  <div class="accordion-collapse collapse" id="q-3" data-bs-parent="#faq">
+                    <div class="accordion-body fs-sm pt-0">
+                      <p>
+                        Tap on the reset password button on the VIBRA app login page to reset your VIBRA account password or reach out to us for prompt assistance at contact@vibra.one
+                        <ul>
+                          <li>Open the VIBRA app to the login page</li>
+                          <li>Tap on the Forgot password button below</li>
+                          <li>Enter your VIBRA registered email address in the first box</li>
+                          <li>Tap send button in the second box</li>
+                          <li>A password reset link will be sent to you to enter into the second box</li>
+                          <li>Click Next</li>
+                        </ul>
+                        This didn't solve your issue? Please reach out to us for prompt assistance at contact@vibra.one
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item -->
+                <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q-4" aria-expanded="false" aria-controls="q-4">
+                      Other issues
+                    </button>
+                  </h3>
+                  <div class="accordion-collapse collapse" id="q-4" data-bs-parent="#faq">
+                    <div class="accordion-body fs-sm pt-0">
+                      <p>
+                        Please reach out to us for prompt assistance at contact@vibra.one
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
               </div>
-            </div>
-            <div class="col-md-6 col-xl-7 col-xxl-8">
-              <img src="mockups/g6.webp" width="618" class="rellax d-block mx-auto" alt="Devices" data-rellax-percentage="0.5" data-rellax-speed="1" data-disable-parallax-down="lg" />
-              <div class="d-none d-xl-block" style="margin-bottom: -450px"></div>
-              <div class="d-none d-lg-block d-xl-none" style="margin-bottom: -800px"></div>
-              <div class="d-none d-sm-block d-lg-none" style="margin-bottom: -400px"></div>
-              <div class="d-sm-none" style="margin-bottom: -240px"></div>
             </div>
           </div>
         </div>
       </section>
-
       
     </main>
     <!-- Footer -->
@@ -584,6 +623,7 @@
             </form>
           </div>
           <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+            
             <div id="footer-links" class="row">
               <div class="col-lg-4">
                 <h6 class="mb-2">
@@ -593,16 +633,18 @@
                   <ul class="nav flex-column pb-lg-1 mb-lg-3">
                     <li class="nav-item"><a href="index.html" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
                     <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Academy</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Partners</a></li>
                     <li class="nav-item"><a href="blog.html" class="nav-link d-inline-block px-0 pt-1 pb-2">Resources</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Prices</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">News</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link d-inline-block px-0 pt-1 pb-2">Careers</a></li>
                   </ul>
                   <ul class="nav flex-column mb-2 mb-lg-0">
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Terms &amp; Conditions</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Privacy Policy</a></li>
+                    <li class="nav-item"><a href="blog.html#blog" class="nav-link d-inline-block px-0 pt-1 pb-2">Blog</a></li>
+                    <li class="nav-item"><a href="blog.html#faq" class="nav-link d-inline-block px-0 pt-1 pb-2">FAQ</a></li>
                   </ul>
                 </div>
               </div>
+              
               <div class="col-xl-4 col-lg-3">
                 <h6 class="mb-2">
                   <a href="#social-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Socials</a>
@@ -615,20 +657,20 @@
                     <li class="nav-item"><a href="https://www.instagram.com/vibraafrica/" class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a></li>
                     <li class="nav-item"><a href="https://t.me/VibraAfrica" class="nav-link d-inline-block px-0 pt-1 pb-2">Telegram</a></li>
                     <li class="nav-item"><a href="https://medium.com/@VibraAfrica" class="nav-link d-inline-block px-0 pt-1 pb-2">Medium</a></li>
-                    <li class="nav-item"><a href="https://www.youtube.com/channel/UC8ZcpYoBFSHgsbTQyQbutnA" class="nav-link d-inline-block px-0 pt-1 pb-2">Youtude</a></li>
+                    <li class="nav-item"><a href="https://www.youtube.com/channel/UC8ZcpYoBFSHgsbTQyQbutnA" class="nav-link d-inline-block px-0 pt-1 pb-2">Youtube</a></li>
                   </ul>
                 </div>
               </div>
               <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
                 <h6 class="mb-2">Contact Us</h6>
-                <a href="mailto:email@example.com" class="fw-medium">email@example.com</a>
+                <a href="mailto: contact@vibra.one" class="fw-medium"> contact@vibra.one</a>
               </div>
             </div>
           </div>
         </div>
        <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
           <span class="text-light opacity-50">&copy; All rights reserved. Made by </span>
-          <a class="nav-link d-inline-block p-0" href="#" target="_blank" rel="noopener">TheDeepInvestor</a>
+          <a class="nav-link d-inline-block p-0" href="https://github.com/Roarnotes" target="_blank" rel="noopener">TheDeepInvestor</a>
         </p>
       </div>
     </footer>
